@@ -1,0 +1,92 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="checkout.component.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- Checkout form goes here -->
+    <div class="checkout-form">
+      <!-- Shipping Address Section -->
+      <div class="section">
+        <h2>Shipping Address</h2>
+        <div class="form-group">
+          <input type="text" id="street" class="form-control" placeholder="Street">
+        </div>
+        <div class="form-group">
+          <input type="text" id="apt" class="form-control" placeholder="Apt">
+        </div>
+        <div class="form-row">
+          <div class="form-group col">
+            <input type="text" id="city" class="form-control" placeholder="City">
+          </div>
+          <div class="form-group col">
+            <input type="text" id="state" class="form-control" placeholder="State">
+          </div>
+          <div class="form-group col">
+            <input type="text" id="zipcode" class="form-control" placeholder="Zipcode">
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Method Section -->
+      <div class="section">
+        <h2>Payment Method</h2>
+        <div class="form-group">
+          <input type="text" id="cardNumber" class="form-control" placeholder="Card number">
+        </div>
+        <div class="form-group">
+          <input type="text" id="nameOnCard" class="form-control" placeholder="Name on card">
+        </div>
+        <div class="form-row">
+          <div class="form-group col">
+            <input type="text" id="expiry" class="form-control" placeholder="Expire on">
+          </div>
+          <div class="form-group col">
+            <input type="text" id="securityCode" class="form-control" placeholder="Security Code">
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Summary Section -->
+      <div class="section">
+        <h2>Order Summary</h2>
+        <div class="form-group">
+          <label for="subtotal">Subtotal:$</label>
+        </div>
+        <div class="form-group">
+          <label for="tax">Tax:$</label>
+        </div>
+        <div class="form-group">
+          <label for="total">Total:$</label>
+        </div>
+      </div>
+
+      <button type="submit">Place the order</button>
+    </div>
+  </div>
+</body>
+</html>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet />

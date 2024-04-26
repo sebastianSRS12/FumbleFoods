@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Page</title>
+  <link rel="stylesheet" href="register.component.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Register</h2>
+    <form class="login-form">
+      <div class="form-control">
+        <input type="text" id="FirstName" placeholder="First Name">
+      </div>
+      <div class="form-control">
+        <input type="text" id="LastName" placeholder="Last Name">
+      </div>
+      <div class="form-control">
+        <input type="text" id="email" placeholder="Email">
+      </div>
+      <div class="form-control">
+        <input type="password" id="password" placeholder="Password">
+      </div>
+      <div class="form-control">
+        <input type="password" id="ConfirmPassword" placeholder="Confirm Password">
+      </div>
+      <div>
+        <input type="checkbox" id="Term/conditions" name="Term/conditions">
+        <label for="Term/conditions"> I have Acknowledged That I have Read and Agreed to the Terms and Conditions.</label>
+      </div>
+      <div class="button-container">
+        <button type="submit">Register/Login</button>
+      </div>
+      <div class="button-container">
+        <button type="submit">Already have an Account? Login here</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+<router-outlet />

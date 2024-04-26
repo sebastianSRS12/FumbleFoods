@@ -1,0 +1,47 @@
+<main class="main">
+  <div class="product-detail-page">
+    <!-- Two side-by-side containers -->
+    <div class="product-container">
+      <!-- Left container with the product image -->
+      <div class="product-image">
+        <img src="{{item.picture}}" alt="Product Image" class="image-content" />
+      </div>
+
+      <!-- Right container with product information and controls -->
+      <div class="product-info">
+        <h1>Name: {{item.name}}</h1>
+        <ul>
+          <li>Brand: {{item.brand}}</li>
+          <li>Shipping from: {{item.shippingFrom}}</li>
+          <li>Dimension: {{item.dimension}}</li>
+          <li>Weight: {{item.weight}}</li>
+          <li>Product rating: {{item.productRating}}</li>
+          <li>Price:$ {{item.price}}</li>
+        </ul>
+
+
+        <button class="add-to-cart" (click)="goToCart()">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product description and related products below -->
+    <div class="product-description">
+      <h2>Description</h2>
+      <p>{{item.description}}.</p>
+    </div>
+
+    <div class="related-products">
+      <h2>Related Products</h2>
+      <div class="related-products-list">
+        <div *ngFor="let item of items; let i = index" class="related-product">
+          <button class="related-image">
+            <img src={{item.picture}}>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<router-outlet />
