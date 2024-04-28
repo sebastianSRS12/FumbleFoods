@@ -1,35 +1,30 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { homeComponent } from './home';
-import { loginComponent } from './login';
-import { registerComponent } from './register';
-import { ProfileModule } from './profile/profile.module';
-import { checkoutComponent } from './checkout';
-import { cartComponent } from './cart';
-import { productDetailComponent } from './productDetail';
+
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    homeComponent,
-    loginComponent,
-    registerComponent,
-    checkoutComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProfileModule,
-    cartComponent,
-    productDetailComponent
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatInputModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-
-

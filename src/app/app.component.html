@@ -1,39 +1,49 @@
-<!DOCTYPE html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="stylesheet" href="app.component.css">
-</head>
-<body>
-  <div class="navbar">
-    <button class="logo-button">
-      <img src="https://raw.githubusercontent.com/TysonVeik/FumbleFoods/main/FumbleFoods.webp?token=GHSAT0AAAAAACQUMIBWLTQE23IZDQ6JAVSYZQUOOXQ" height="80">
+
+<header>
+  <div class="logo">
+    <button>
+      <img src=".png" alt="Company Logo">
     </button>
-    <div class="spacer"></div>
-    <input type="text" placeholder="Search..." class="search-box">
-    <div class="spacer"></div>
-    <button class="nav-item nav-link nav-btn" routerLink="/">Home </button>
-    <button class="nav-item nav-link nav-btn" routerLink="/login">Login </button>
-    <button class="nav-item nav-link nav-btn" routerLink="/register">Register</button>
-    <button class="nav-item nav-link nav-btn" routerLink="/profile">Profile</button>
-    <button class="nav-item nav-link nav-btn" routerLink="/checkout">Checkout</button>
-    <button class="nav-item nav-link nav-btn" routerLink="/cart">Cart</button>
   </div>
-</body>
-
-  <!-- main content container -->
-
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 offset-sm-2">
-          <router-outlet></router-outlet>
-        </div>
-      </div>
-    </div>
+  <div class="location">
+    <button>
+    </button>
   </div>
+  <div class="search">
+    <input type="text" placeholder="Search...">
+    <button type="button">
+      Product List
+      <icon>search</icon>
+    </button>
+  </div>
+  <div class="login">
+    <button "/login"> Login</button>
+  </div>
+  <div class="cart">
+    <button type="button">
+      <img>shopping_cart</img>
+    </button>
+  </div>
+</header>
 
+<main>
+  <aside class="categories">
+    <button >Meat</button>
+    <button >Fruit</button>
+    <button >Vegetables</button>
+    <button >Dairy</button>
+  </aside>
 
+  <section class="product-list">
+  </section>
+</main>
 
+<footer>
+  <div class="featured-products">
+    <button="/product-list">Featured Products</button>
+  </div>
+  <div class="deals">
+    <button "/product-list">Deals</button>
+  </div>
+</footer>
