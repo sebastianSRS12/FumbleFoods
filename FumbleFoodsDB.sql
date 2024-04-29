@@ -62,6 +62,7 @@ rating varchar(255) not null,
 SKU varchar(255) not null,
 inventory varchar(255) not null,
 cost double not null,
+image varchar(255) not null,
 category varchar(255) not null,
 foreign key(manufacturerId) references Manufacturer(manufacturerId),
 primary key (productId)
