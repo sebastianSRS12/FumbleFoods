@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="app.component.css">
+</head>
+<body>
+  <div class="navbar">
+    <button class="logo-button">
+      <img src="https://github.com/TysonVeik/FumbleFoods/blob/3137bdf3e4c260c843bfcd417191d83237461182/FumbleFoods.webp?raw=ture" height="80">
+    </button>
+    <div class="spacer"></div>
+    <input type="text" placeholder="Search..." class="search-box">
+    <div class="spacer"></div>
+    <button class="nav-item nav-link nav-btn" routerLink="/">Home </button>
+    <button class="nav-item nav-link nav-btn" routerLink="/login">Login </button>
+    <button class="nav-item nav-link nav-btn" routerLink="/register">Register</button>
+    <button class="nav-item nav-link nav-btn" routerLink="/profile">Profile</button>
+    <button class="nav-item nav-link nav-btn" routerLink="/checkout">Checkout</button>
+    <button class="nav-item nav-link nav-btn" routerLink="/cart">Cart</button>
+  </div>
+</body>
+
+  <!-- main content container -->
+
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
