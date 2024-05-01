@@ -1,0 +1,121 @@
+.navbar {
+  display: flex;
+  padding: 4px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  align-items: center;
+  background-color: grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo-button {
+  border: none;
+  width: 100px;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 100px;
+  height: 80px;
+}
+
+.search-box {
+  margin-right: 200px;
+  padding: 8px;
+  height: 20px;
+  width: 30%;
+  border-radius: 50px;
+}
+
+.nav-btn {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  width: 200px;
+  height: 60px;
+  margin-left: 0px;
+  cursor: pointer;
+  word-break: break-all;
+}
+
+  .nav-btn:hover {
+    background-color: black;
+  }
+
+
+.login-container {
+  width: 1500px;
+  height: 700px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+  .form-control label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-control input {
+    width: 80%;
+    padding: 10px;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 50%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+:host {
+  max-width: 1280px;
+  padding: 2rem;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #F2F2F2;
+}
+
+tr:nth-child(odd) {
+  background: #FFF;
+}
+
+th, td {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+table {
+  margin: 0 auto;
+}
