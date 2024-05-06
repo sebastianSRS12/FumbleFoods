@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { homeComponent } from './home';
+import { HomeComponent } from './home';
 import { loginComponent } from './login';
 import { registerComponent } from './register';
 import { ProfileModule } from './profile/profile.module';
@@ -15,17 +15,17 @@ import { Router } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
-    homeComponent,
     loginComponent,
     registerComponent,
-    checkoutComponent
+    checkoutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ProfileModule,
     cartComponent,
-    productDetailComponent
+    productDetailComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

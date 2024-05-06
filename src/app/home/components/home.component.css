@@ -1,0 +1,44 @@
+.main-content {
+  max-width: 960px; /* Setting max width of the main content area */
+  margin: 20px auto; /* Centers the content horizontally with 20px top and bottom margin */
+  padding: 20px; /* Padding inside the main content box */
+  background: #fff; /* Background color to white */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow around the main content box */
+  border-radius: 8px; /* Rounds the corners of the box */
+}
+
+.grid-container {
+  display: grid; /* Using CSS Grid layout to organize child elements */
+  grid-template-columns: repeat(3, 1fr); /* Divides the grid into three equal columns */
+  grid-template-rows: auto auto auto; /* Each row size being determined by its content */
+  gap: 20px; /* Sets the gap size between the grid items */
+}
+
+.grid-button {
+  height: 150px; /* Fixed height for each button */
+  display: flex; /* Using Flexbox for centering content inside the button */
+  flex-direction: column; /* Arranges flex items vertically */
+  align-items: center; /* Centers items horizontally within the button */
+  justify-content: center; /* Centers items vertically within the button */
+  padding: 10px; /* Padding inside each button */
+  background: #f9f9f9; /* Light grey background for each button */
+  border-radius: 8px; /* Rounded corners for each button */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow for each button */
+  cursor: pointer; /* Changes the mouse cursor to a pointer when over the button */
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect on hover */
+}
+
+  .grid-button:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Darker shadow on hover for a "lifting" effect */
+  }
+
+  .grid-button img {
+    max-width: 80px; /* Maximum image width for consistency */
+    height: auto; /* Height is automatically adjusted to maintain aspect ratio */
+    margin-bottom: 10px; /* Space between the image and the text below it */
+  }
+
+h1 {
+  text-align: center; /* Centers the header text horizontally */
+  padding-top: 20px; /* Adds space above the header to avoid overlap with any navbar */
+}

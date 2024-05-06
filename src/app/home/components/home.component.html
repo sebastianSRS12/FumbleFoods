@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="home.component.css">
+</head>
+<div class="main-content">
+  <h1>Home Page</h1>
+  <div class="grid-container">
+    <button class="grid-button" style="grid-row: 1; grid-column: 2;" (click)="navigate('/productDetail')">
+      <!-- Button for 'Temp Product Detail', positioned in the center of the first row -->
+      <img src="path_to_temp_product_detail_image" alt="Temp Product Detail">
+      <div>Temp Product Detail</div>
+    </button>
+    <!-- Rest of the buttons buttons are positioned in a 2x3 grid starting from the second row -->
+    <button class="grid-button" style="grid-row: 2; grid-column: 1;" (click)="navigate('/meat')">
+      <img src="path_to_meat_image" alt="Meat">
+      <div>Meat</div>
+    </button>
+    <!-- Each button includes a nav link, an image (not added yet), and a label, described by the HTML structure -->
+    <button class="grid-button" style="grid-row: 2; grid-column: 2;" (click)="navigate('/fruit')">
+      <img src="path_to_fruit_image" alt="Fruit">
+      <div>Fruit</div>
+    </button>
+    <button class="grid-button" style="grid-row: 2; grid-column: 3;" (click)="navigate('/vegetables')">
+      <img src="path_to_vegetables_image" alt="Vegetables">
+      <div>Vegetables</div>
+    </button>
+    <button class="grid-button" style="grid-row: 3; grid-column: 1;" (click)="navigate('/dairy')">
+      <img src="path_to_dairy_image" alt="Dairy">
+      <div>Dairy</div>
+    </button>
+    <button class="grid-button" style="grid-row: 3; grid-column: 2;" (click)="navigate('/featured')">
+      <img src="path_to_featured_image" alt="Featured Products">
+      <div>Featured Products</div>
+    </button>
+    <button class="grid-button" style="grid-row: 3; grid-column: 3;" (click)="navigate('/deals')">
+      <img src="path_to_deals_image" alt="Deals">
+      <div>Deals</div>
+    </button>
+  </div>
+</div>
